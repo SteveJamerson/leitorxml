@@ -4,9 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'leitor',
     loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
   },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'leitor'
+  }
 ];
 
 @NgModule({
