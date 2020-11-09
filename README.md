@@ -30,4 +30,7 @@
 - [x] db (TESTE)
 - [x] Styles
   - [x] Sidenav
+  - [x] Input Type File
+  - [x] Input Type Search
+
 

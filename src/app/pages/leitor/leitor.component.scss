@@ -1,0 +1,37 @@
+input[type="file"] {
+  position: absolute;
+  width: calc(100% + 1.5rem);
+  top: -0.5em;
+  left: -0.75rem;
+  right: 0.75rem;
+  bottom: 0;
+  opacity: 0;
+}
+
+.leitor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  margin: 1rem;
+  align-items: center;
+}
+
+.mat-type {
+  grid-column: 1/5;
+}
+
+.mat-search {
+  grid-column: 1/4;
+  width: 175px;
+  transition: .5s;
+  &.mat-focused {
+    width: 100%;
+  }
+}
+
+.mat-options {
+  grid-column: 4/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto .5rem;
+}

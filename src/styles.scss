@@ -2,3 +2,70 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+i[class*="uil"] {
+  font-size: x-large;
+}
+
+.mat-form-field-wrapper{
+  padding-bottom: 0;
+}
+
+.mat-type {
+  .mat-form-field-outline{
+    &-start, &-end, &-gap {
+      border-style: dashed!important;
+    }
+    &-start, &-gap {
+      border-right-style: none!important;
+    }
+    &-end, &-gap {
+      border-left-style: none!important;
+    }
+  }
+  .mat-form-field-label{
+    text-align: center!important;
+    position: relative;
+    top: calc(100px / 1.70)
+  }
+  .mat-form-field-flex{
+    height: 100px;
+  }
+  .mat-form-field-infix{
+    padding: 0!important;
+    margin: 0!important;
+    height: 100%;
+    border-top: 0
+  }
+  .mat-form-field-label-wrapper {
+    padding: 0!important;
+    margin: 0!important;
+  }
+}
+
+.mat-form-field-suffix {
+  top: -1px !important
+}
+
+.mat-menu-panel{
+  margin-top: 16px!important;
+}
+
+.mat-checkbox, .mat-checkbox-layout {
+  height: 100%;
+  width: 100%;
+  align-items: center!important;
+}
+
+.mat-checkbox {
+  span{
+    width: 100%;
+    text-align: end;
+  }
+  &-inner-container {
+    margin: auto 1rem 1rem 0!important;
+  }
+  &:not(.mat-checkbox-checked) span{
+    text-decoration: line-through;
+  }
+}

@@ -1,3 +1,38 @@
 <app-sidenav>
-  LEITOR
+  <main class="leitor">
+    <mat-form-field appearance="outline" class="mat-type">
+      <mat-label>Arquivos</mat-label>
+      <input matInput readonly>
+      <input type="file" formControlName="input" accept=".xml" multiple>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="mat-search">
+      <mat-label>Search</mat-label>
+      <input matInput type="search">
+      <i matSuffix class="uil uil-search"></i>
+    </mat-form-field>
+    <div class="mat-options">
+      <button mat-icon-button class="mat-filter" [matMenuTriggerFor]="filter">
+        <i class="uil uil-filter"></i>
+      </button>
+      <mat-menu #filter="matMenu">
+        <button mat-menu-item role="menuitemcheckbox" (click)="$event.stopPropagation()">
+          <mat-checkbox [checked]="true">Numero</mat-checkbox>
+        </button>
+        <button mat-menu-item role="menuitemcheckbox" (click)="$event.stopPropagation()">
+          <mat-checkbox [checked]="true">Chave de Acesso</mat-checkbox>
+        </button>
+        <button mat-menu-item role="menuitemcheckbox" (click)="$event.stopPropagation()">
+          <mat-checkbox [checked]="true">Status</mat-checkbox>
+        </button>
+      </mat-menu>
+      <button mat-icon-button class="mat-actions" [matMenuTriggerFor]="actions">
+        <i class="uil uil-ellipsis-v"></i>
+      </button>
+      <mat-menu #actions="matMenu">
+        <button mat-menu-item>
+          Excel
+        </button>
+      </mat-menu>
+    </div>
+  </main>
 </app-sidenav>
