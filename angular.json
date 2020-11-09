@@ -66,7 +66,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "leitorxml:build"
+            "browserTarget": "leitorxml:build",
+            "port": 3000
           },
           "configurations": {
             "production": {
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "leitorxml"
+    }
+  },
+  "defaultProject": "leitorxml",
+  "cli": {
+    "analytics": "fcecd906-17e0-4b0c-b97b-761ff0b4d2c8"
+  }
 }
