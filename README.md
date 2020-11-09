@@ -20,5 +20,12 @@
       - y;
   - [x] pwa;
     *ng add @angular/pwa --project leitorxml*
+- [x] Components
+  - [x] sidenav;
+    *ng g @angular/material:material-nav --name=shared/components/sidenav*
+- [x] Pages;
+  *ng g m pages --routing*
+  - [x] leitor;
+    *ng g c pages/leitor*
 - [ ] db (TESTE)
-- [ ] Components
+
